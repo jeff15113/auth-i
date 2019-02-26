@@ -14,7 +14,7 @@ server.use(express.json());
 
 server.post("/api/register", (req, res) => {
   let user = req.body;
-  const hash = bcrypt.hashSync(user.password, 20);
+  const hash = bcrypt.hashSync(user.password, 10);
 
   user.password = hash;
 

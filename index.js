@@ -4,7 +4,7 @@ const express = require("express");
 const bcrypt = require("bcryptjs");
 
 const db = require("./dbConfig.js");
-const Users = require("./users/users-module.js");
+const Users = require("./userdb.js");
 
 const server = express();
 
